@@ -166,7 +166,7 @@ body {
   display: flex;
   height: 91vh;
   max-width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide-1.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1846.JPG") no-repeat center center/cover;
   margin-bottom: 10px;
 }
 .hero-section .image {
@@ -281,6 +281,9 @@ body {
 #couple .couple-info .info .image {
   height: 100%;
 }
+#couple .couple-info .info .image img {
+  height: 400px;
+}
 #couple .couple-info .info .text {
   padding: 10px;
 }
@@ -350,7 +353,7 @@ body {
   height: 320px;
   width: 100%;
   font-size: 4rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/countdown-bg.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1845.JPG") no-repeat center center/cover;
   margin-top: 20px;
   color: white;
   text-shadow: 2px 2px 5px black;

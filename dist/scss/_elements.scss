@@ -13,7 +13,7 @@
 	height: 91vh;
 	max-width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('../images/slide-1.jpg') no-repeat center center/cover;
+		url('../images/IMG_1846.JPG') no-repeat center center/cover;
 	margin-bottom: 10px;
 
 	.image {
@@ -147,6 +147,10 @@
 
 			.image {
 				height: 100%;
+
+				img {
+					height: 400px;
+				}
 			}
 
 			.text {
@@ -236,7 +240,7 @@
 	width: 100%;
 	font-size: 4rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('../images/countdown-bg.jpg') no-repeat center center/cover;
+		url('../images/IMG_1845.JPG') no-repeat center center/cover;
 	margin-top: 20px;
 	color: white;
 	text-shadow: 2px 2px 5px black;
