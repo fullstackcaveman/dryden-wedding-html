@@ -131,6 +131,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  max-width: 1920px;
+}
+
 body {
   font-family: "Dosis";
   height: fit-content;
@@ -167,6 +171,7 @@ body {
   height: 91vh;
   max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1846.JPG") no-repeat center center/cover;
+  background-position: top;
   margin-bottom: 10px;
 }
 .hero-section .image {
