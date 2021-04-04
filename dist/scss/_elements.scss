@@ -14,7 +14,7 @@
 	max-width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url('../images/IMG_1846.JPG') no-repeat center center/cover;
-	background-position: top;
+	background-position: center;
 	margin-bottom: 10px;
 
 	.image {
@@ -198,98 +198,121 @@
 }
 
 // Timeline Section
-.timeline {
-	position: relative;
-	margin: 30px auto;
-	width: 90%;
+.timeline-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-	ul li {
-		margin-bottom: 50px;
-		list-style-type: none;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
+	.styled-heading {
+		margin-top: 30px;
+		border-top: 2px solid rgb(184, 224, 224);
+		border-bottom: 2px solid rgb(184, 224, 224);
+		background-color: rgb(207, 231, 231);
+		width: 300px;
+
+		h2 {
+			padding: 10px 5px;
+			font-family: $primary-font;
+			font-size: 2.5rem;
+			color: rgb(100, 100, 100);
+		}
 	}
 
-	.point {
-		min-width: 20px;
-		height: 20px;
-		background-color: #be9fe1;
-		border-radius: 100%;
-		z-index: 2;
-		border: 3px #333333 solid;
+	.timeline {
 		position: relative;
-		left: 1px;
-	}
+		margin: 30px auto;
+		width: 90%;
 
-	ul li .content {
-		width: 50%;
-		padding: 0 20px;
-	}
+		ul li {
+			margin-bottom: 50px;
+			list-style-type: none;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
 
-	ul li:nth-child(odd) .content {
-		padding-left: 0;
-	}
+		.point {
+			min-width: 20px;
+			height: 20px;
+			background-color: #be9fe1;
+			border-radius: 100%;
+			z-index: 2;
+			border: 3px #333333 solid;
+			position: relative;
+			left: 1px;
+		}
 
-	ul li:nth-child(odd) .date {
-		padding-right: 0;
-	}
+		ul li .content {
+			width: 50%;
+			padding: 0 20px;
+		}
 
-	ul li:nth-child(even) .content {
-		padding-right: 0;
-	}
+		ul li:nth-child(odd) .content {
+			padding-left: 0;
+		}
 
-	ul li:nth-child(even) .date {
-		padding-left: 0;
-	}
+		ul li:nth-child(odd) .date {
+			padding-right: 0;
+		}
 
-	ul li .date {
-		width: 50%;
-		padding: 0 20px;
-		font-weight: normal;
-	}
+		ul li:nth-child(even) .content {
+			padding-right: 0;
+		}
 
-	ul li .date h4 {
-		background-color: #e1ccec;
-		width: 100px;
-		text-align: center;
-		padding: 5px 10px;
-		border-radius: 10px;
-	}
+		ul li:nth-child(even) .date {
+			padding-left: 0;
+		}
 
-	ul li .content h3 {
-		padding: 10px 20px;
-		background-color: #be9fe1;
-		margin-bottom: 0;
-		text-align: center;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-	}
+		ul li .date {
+			width: 50%;
+			padding: 0 20px;
+			font-weight: normal;
+		}
 
-	ul li .content p {
-		padding: 10px 20px;
-		background-color: #e1d9ec;
-		margin-top: 0;
-		text-align: center;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
+		ul li .date h4 {
+			background-color: #e1ccec;
+			width: 100px;
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 10px;
+		}
 
-	ul li:nth-child(even) {
-		flex-direction: row-reverse;
-	}
+		ul li .content h3 {
+			padding: 10px 20px;
+			background-color: #be9fe1;
+			margin-bottom: 0;
+			text-align: center;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
 
-	ul li:nth-child(even) .date h4 {
-		float: right;
-	}
+		ul li .content p {
+			padding: 10px 20px;
+			background-color: #e1d9ec;
+			margin-top: 0;
+			text-align: center;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
 
-	&::before {
-		content: '';
-		position: absolute;
-		height: 100%;
-		width: 3px;
-		left: 50%;
-		background-color: #333333;
+		ul li:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+		ul li:nth-child(even) .date h4 {
+			float: right;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 3px;
+			left: 50%;
+			background-color: #333333;
+		}
 	}
 }
 
@@ -309,13 +332,73 @@
 	color: white;
 	text-shadow: 2px 2px 5px black;
 
-	h2 {
-		font-family: $primary-font;
+	.divider-container {
+		h2 {
+			font-family: $primary-font;
+			font-size: 5rem;
+			margin-top: 20px;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+	}
+}
+
+// RSVP page
+.rsvp-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+
+	input,
+	select,
+	textarea {
+		box-sizing: border-box;
+		border: none;
+		border-radius: 5px;
+		height: 50px;
+		width: 250px;
+		outline: none;
+		margin: 5px 5px;
+		padding: 10px;
+		color: grey;
+		font-size: 1.1rem;
 	}
 
-	.timer-container {
-		.labels {
-			font-size: 1.4rem;
+	textarea {
+		width: 513px;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+		width: 300px;
+
+		.btn {
+			font-family: $secondary-font;
+			width: 100px;
+			height: 30px;
+			border-radius: 5px;
+			border: none;
+			color: white;
+			box-shadow: 2px 2px 5px black;
+			background-color: rgb(56, 103, 190);
+			cursor: pointer;
+		}
+
+		a {
+			box-shadow: 2px 2px 5px black;
+			border-radius: 5px;
+			padding: 8px 25px;
+			background-color: rgb(255, 123, 123);
+			text-decoration: none;
+			color: white;
+			font-size: 0.9rem;
 		}
 	}
 }

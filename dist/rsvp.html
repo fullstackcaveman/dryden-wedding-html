@@ -10,67 +10,46 @@
 	<body>
 		<section class="hero-section">
 			<div class="image">
-				<div class="headline">
-					<h1>Jake & Sydnee</h1>
-				</div>
-				<div class="subhead">
-					<h2>WE'RE GETTING MARRIED</h2>
-				</div>
+				<form data-netlify="true" name="rsvp" id="rsvpform" class="rsvp-form">
+					<div class="form-left">
+						<input name="name" label="Name" placeholder="Your Name" required />
+						<input
+							name="numGuests"
+							label="Number of Guests"
+							placeholder="Number Of Guests"
+							required
+						/>
+					</div>
+
+					<div class="form-right">
+						<input
+							name="email"
+							label="Your Email"
+							placeholder="Your Email"
+							required
+						/>
+
+						<select name="events" id="events">
+							<option value="Select">Select Event(s)</option>
+							<option value="Both Events">Both Events</option>
+							<option value="Wedding Only">Wedding Only</option>
+							<option value="Reception Only">Reception Only</option>
+						</select>
+					</div>
+
+					<div class="text-field">
+						<textarea
+							name="message"
+							form="rsvpform"
+							placeholder="Message (optional)"
+						></textarea>
+					</div>
+					<div class="buttons">
+						<button type="submit" class="btn">SUBMIT</button>
+						<a href="index.html">CANCEL</a>
+					</div>
+				</form>
 			</div>
 		</section>
-
-		<header id="header">
-			<nav>
-				<div class="container">
-					<div class="couple">
-						<h2>
-							<a href="index.html"> J S </a>
-						</h2>
-					</div>
-					<div class="navbar">
-						<ul class="navas">
-							<li>
-								<a href="index.html">HOME</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<form data-netlify="true" name="rsvp" id="rsvpform">
-			<div class="form-left">
-				<input name="name" label="Name" placeholder="Your Name" required />
-				<input
-					name="numGuests"
-					label="Number of Guests"
-					placeholder="Number Of Guests"
-					required
-				/>
-			</div>
-
-			<div class="form-right">
-				<input
-					name="email"
-					label="Your Email"
-					placeholder="Your Email"
-					required
-				/>
-
-				<select name="events" id="events">
-					<option value="Select">Select Event(s)</option>
-					<option value="Both Events">Both Events</option>
-					<option value="Wedding Only">Wedding Only</option>
-					<option value="Reception Only">Reception Only</option>
-				</select>
-			</div>
-
-			<div class="text-field">
-				<textarea name="message" form="rsvpform">Message (optional)</textarea>
-			</div>
-			<button type="submit">SUBMIT</button>
-		</form>
-
-		<br />
 	</body>
 </html>
