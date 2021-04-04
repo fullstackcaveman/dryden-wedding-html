@@ -171,7 +171,7 @@ body {
   height: 91vh;
   max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1846.JPG") no-repeat center center/cover;
-  background-position: top;
+  background-position: center;
   margin-bottom: 10px;
 }
 .hero-section .image {
@@ -321,19 +321,39 @@ body {
   font-size: 1.4rem;
 }
 
-.timeline {
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.timeline-container .styled-heading {
+  margin-top: 30px;
+  border-top: 2px solid #b8e0e0;
+  border-bottom: 2px solid #b8e0e0;
+  background-color: #cfe7e7;
+  width: 300px;
+}
+.timeline-container .styled-heading h2 {
+  padding: 10px 5px;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #646464;
+}
+.timeline-container .timeline {
   position: relative;
   margin: 30px auto;
   width: 90%;
 }
-.timeline ul li {
+.timeline-container .timeline ul li {
   margin-bottom: 50px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.timeline .point {
+.timeline-container .timeline .point {
   min-width: 20px;
   height: 20px;
   background-color: #be9fe1;
@@ -343,35 +363,35 @@ body {
   position: relative;
   left: 1px;
 }
-.timeline ul li .content {
+.timeline-container .timeline ul li .content {
   width: 50%;
   padding: 0 20px;
 }
-.timeline ul li:nth-child(odd) .content {
+.timeline-container .timeline ul li:nth-child(odd) .content {
   padding-left: 0;
 }
-.timeline ul li:nth-child(odd) .date {
+.timeline-container .timeline ul li:nth-child(odd) .date {
   padding-right: 0;
 }
-.timeline ul li:nth-child(even) .content {
+.timeline-container .timeline ul li:nth-child(even) .content {
   padding-right: 0;
 }
-.timeline ul li:nth-child(even) .date {
+.timeline-container .timeline ul li:nth-child(even) .date {
   padding-left: 0;
 }
-.timeline ul li .date {
+.timeline-container .timeline ul li .date {
   width: 50%;
   padding: 0 20px;
   font-weight: normal;
 }
-.timeline ul li .date h4 {
+.timeline-container .timeline ul li .date h4 {
   background-color: #e1ccec;
   width: 100px;
   text-align: center;
   padding: 5px 10px;
   border-radius: 10px;
 }
-.timeline ul li .content h3 {
+.timeline-container .timeline ul li .content h3 {
   padding: 10px 20px;
   background-color: #be9fe1;
   margin-bottom: 0;
@@ -379,7 +399,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.timeline ul li .content p {
+.timeline-container .timeline ul li .content p {
   padding: 10px 20px;
   background-color: #e1d9ec;
   margin-top: 0;
@@ -387,13 +407,13 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.timeline ul li:nth-child(even) {
+.timeline-container .timeline ul li:nth-child(even) {
   flex-direction: row-reverse;
 }
-.timeline ul li:nth-child(even) .date h4 {
+.timeline-container .timeline ul li:nth-child(even) .date h4 {
   float: right;
 }
-.timeline::before {
+.timeline-container .timeline::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -416,11 +436,65 @@ body {
   color: white;
   text-shadow: 2px 2px 5px black;
 }
-.divider-section h2 {
+.divider-section .divider-container h2 {
   font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  margin-top: 20px;
 }
-.divider-section .timer-container .labels {
-  font-size: 1.4rem;
+.divider-section .divider-container h3 {
+  font-size: 2rem;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
+  outline: none;
+  margin: 5px 5px;
+  padding: 10px;
+  color: grey;
+  font-size: 1.1rem;
+}
+.rsvp-form textarea {
+  width: 513px;
+}
+.rsvp-form .buttons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+}
+.rsvp-form .buttons .btn {
+  font-family: "Dosis";
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  background-color: #3867be;
+  cursor: pointer;
+}
+.rsvp-form .buttons a {
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+  padding: 8px 25px;
+  background-color: #ff7b7b;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
