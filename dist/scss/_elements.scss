@@ -346,59 +346,73 @@
 }
 
 // RSVP page
-.rsvp-form {
+.rsvp-hero-section {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 600px;
+	height: 100vh;
+	max-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../images/IMG_1846.JPG') no-repeat center center/cover;
+	background-position: center;
 
-	input,
-	select,
-	textarea {
-		box-sizing: border-box;
-		border: none;
-		border-radius: 5px;
-		height: 50px;
-		width: 250px;
-		outline: none;
-		margin: 5px 5px;
-		padding: 10px;
-		color: grey;
-		font-size: 1.1rem;
-	}
-
-	textarea {
-		width: 513px;
-	}
-
-	.buttons {
+	.rsvp-form {
 		display: flex;
-		justify-content: space-around;
-		text-align: center;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		width: 300px;
+		width: 600px;
 
-		.btn {
-			font-family: $secondary-font;
-			width: 100px;
-			height: 30px;
-			border-radius: 5px;
+		input,
+		select,
+		textarea {
+			box-sizing: border-box;
 			border: none;
-			color: white;
-			box-shadow: 2px 2px 5px black;
-			background-color: rgb(56, 103, 190);
-			cursor: pointer;
+			border-radius: 5px;
+			height: 50px;
+			width: 250px;
+			outline: none;
+			margin: 5px 5px;
+			padding: 10px;
+			color: grey;
+			font-family: $secondary-font;
+			font-size: 1.1rem;
 		}
 
-		a {
-			box-shadow: 2px 2px 5px black;
-			border-radius: 5px;
-			padding: 8px 25px;
-			background-color: rgb(255, 123, 123);
-			text-decoration: none;
-			color: white;
-			font-size: 0.9rem;
+		textarea {
+			width: 513px;
+			font-family: $secondary-font;
+			font-size: 1.1rem;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: space-around;
+			text-align: center;
+			align-items: center;
+			width: 300px;
+
+			.btn {
+				font-family: $secondary-font;
+				width: 100px;
+				height: 30px;
+				border-radius: 5px;
+				border: none;
+				color: white;
+				box-shadow: 2px 2px 5px black;
+				background-color: rgb(56, 103, 190);
+				cursor: pointer;
+			}
+
+			a {
+				box-shadow: 2px 2px 5px black;
+				border-radius: 5px;
+				padding: 8px 25px;
+				background-color: rgb(255, 123, 123);
+				text-decoration: none;
+				color: white;
+				font-size: 0.9rem;
+			}
 		}
 	}
 }
