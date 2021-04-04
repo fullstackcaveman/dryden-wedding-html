@@ -109,6 +109,32 @@
 	}
 }
 
+@media (max-width: $breakpoint-large) {
+	#header {
+		nav {
+			.container {
+				.couple {
+					h2 {
+						a {
+							font-size: 1.5rem;
+						}
+					}
+				}
+
+				.navbar {
+					ul {
+						li {
+							a {
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 // Couple Section
 #couple {
 	display: flex;
@@ -165,6 +191,16 @@
 					font-family: $secondary-font;
 					font-size: 1rem;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-med-lg) {
+	#couple {
+		.couple-info {
+			.info {
+				width: 600px;
 			}
 		}
 	}
@@ -412,6 +448,37 @@
 				text-decoration: none;
 				color: white;
 				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-small) {
+	.rsvp-hero-section {
+		.rsvp-form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 320px;
+
+			.form-left,
+			.form-right {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.text-field {
+				textarea {
+					width: 250px;
+				}
+			}
+
+			.buttons {
+				justify-content: space-between;
+				text-align: center;
+				align-items: center;
+				width: 250px;
 			}
 		}
 	}
