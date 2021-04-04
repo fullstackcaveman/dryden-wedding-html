@@ -445,16 +445,25 @@ body {
   font-size: 2rem;
 }
 
-.rsvp-form {
+.rsvp-hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1846.JPG") no-repeat center center/cover;
+  background-position: center;
+}
+.rsvp-hero-section .rsvp-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 600px;
 }
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea {
+.rsvp-hero-section .rsvp-form input,
+.rsvp-hero-section .rsvp-form select,
+.rsvp-hero-section .rsvp-form textarea {
   box-sizing: border-box;
   border: none;
   border-radius: 5px;
@@ -464,19 +473,22 @@ body {
   margin: 5px 5px;
   padding: 10px;
   color: grey;
+  font-family: "Dosis";
   font-size: 1.1rem;
 }
-.rsvp-form textarea {
+.rsvp-hero-section .rsvp-form textarea {
   width: 513px;
+  font-family: "Dosis";
+  font-size: 1.1rem;
 }
-.rsvp-form .buttons {
+.rsvp-hero-section .rsvp-form .buttons {
   display: flex;
   justify-content: space-around;
   text-align: center;
   align-items: center;
   width: 300px;
 }
-.rsvp-form .buttons .btn {
+.rsvp-hero-section .rsvp-form .buttons .btn {
   font-family: "Dosis";
   width: 100px;
   height: 30px;
@@ -487,7 +499,7 @@ body {
   background-color: #3867be;
   cursor: pointer;
 }
-.rsvp-form .buttons a {
+.rsvp-hero-section .rsvp-form .buttons a {
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
   padding: 8px 25px;
