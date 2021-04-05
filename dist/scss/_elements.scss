@@ -65,6 +65,7 @@
 // Navbar
 
 #header {
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -234,17 +235,18 @@
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			border: 1px solid grey;
+			border: 1px solid lightgrey;
 			border-radius: 5px;
-			width: 800px;
-			height: 400px;
+			width: 580px;
+			height: fit-content;
 			margin: 10px 5px;
+			box-shadow: 2px 2px 5px lightgrey;
 
 			.image {
 				height: 100%;
 
 				img {
-					height: 400px;
+					height: 300px;
 				}
 			}
 
@@ -268,7 +270,15 @@
 	#couple {
 		.couple-info {
 			.info {
-				width: 600px;
+				flex-direction: column;
+				// height: 600px;
+				width: 300px;
+
+				.image {
+					img {
+						width: auto;
+					}
+				}
 			}
 		}
 	}
@@ -305,6 +315,19 @@
 	.timer-container {
 		.labels {
 			font-size: 1.4rem;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-xs) {
+	.countdown-section {
+		h2 {
+			font-size: 3rem;
+		}
+		.timer-container {
+			.timer {
+				font-size: 3rem;
+			}
 		}
 	}
 }
