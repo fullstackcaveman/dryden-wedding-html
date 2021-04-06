@@ -328,7 +328,7 @@ body {
   text-align: center;
   border: 1px solid lightgrey;
   border-radius: 5px;
-  width: 580px;
+  width: 600px;
   height: fit-content;
   margin: 10px 5px;
   box-shadow: 2px 2px 5px lightgrey;
@@ -337,7 +337,7 @@ body {
   height: 100%;
 }
 #couple .couple-info .info .image img {
-  height: 300px;
+  height: 430px;
 }
 #couple .couple-info .info .text {
   padding: 10px;
@@ -356,7 +356,7 @@ body {
     width: 300px;
   }
   #couple .couple-info .info .image img {
-    width: auto;
+    width: 300px;
   }
 }
 @media (max-width: 500px) {
