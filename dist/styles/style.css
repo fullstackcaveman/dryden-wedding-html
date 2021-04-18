@@ -428,10 +428,10 @@ body {
 .timeline-container .timeline .point {
   min-width: 20px;
   height: 20px;
-  background-color: #be9fe1;
+  background-color: #cfe7e7;
   border-radius: 100%;
   z-index: 2;
-  border: 3px #333333 solid;
+  border: 3px #b8e0e0 solid;
   position: relative;
   left: 1px;
 }
@@ -457,7 +457,7 @@ body {
   font-weight: normal;
 }
 .timeline-container .timeline ul li .date h4 {
-  background-color: #e1ccec;
+  background-color: #b8e0e0;
   width: 100px;
   text-align: center;
   padding: 5px 10px;
@@ -465,7 +465,7 @@ body {
 }
 .timeline-container .timeline ul li .content h3 {
   padding: 10px 20px;
-  background-color: #be9fe1;
+  background-color: #b8e0e0;
   margin-bottom: 0;
   text-align: center;
   border-top-left-radius: 10px;
@@ -473,7 +473,7 @@ body {
 }
 .timeline-container .timeline ul li .content p {
   padding: 10px 20px;
-  background-color: #e1d9ec;
+  background-color: #cfe7e7;
   margin-top: 0;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -491,7 +491,7 @@ body {
   height: 100%;
   width: 3px;
   left: 50%;
-  background-color: #333333;
+  background-color: #b8e0e0;
 }
 
 .divider-section {
