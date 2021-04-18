@@ -213,12 +213,12 @@ body {
 }
 @media (max-width: 600px) {
   .hero-section {
-    background-position-x: -250px;
+    background-position-x: -100px;
   }
 }
 @media (max-width: 500px) {
   .hero-section {
-    background-position-x: -300px;
+    background-position-x: -200px;
   }
   .hero-section .image h1 {
     font-size: 3rem;
