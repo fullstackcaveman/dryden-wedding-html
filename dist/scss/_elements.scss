@@ -60,13 +60,13 @@
 
 @media (max-width: $breakpoint-small) {
 	.hero-section {
-		background-position-x: -250px;
+		background-position-x: -100px;
 	}
 }
 
 @media (max-width: $breakpoint-xs) {
 	.hero-section {
-		background-position-x: -300px;
+		background-position-x: -200px;
 
 		.image {
 			h1 {
