@@ -331,16 +331,21 @@ body {
   width: 600px;
   height: fit-content;
   margin: 10px 5px;
-  box-shadow: 2px 2px 5px lightgrey;
+  padding: 10px;
+  box-shadow: 2px 2px 2px lightgrey;
 }
 #couple .couple-info .info .image {
   height: 100%;
 }
 #couple .couple-info .info .image img {
+  margin: 0 auto;
   height: 430px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px darkgrey;
 }
 #couple .couple-info .info .text {
   padding: 10px;
+  line-height: 1.3;
 }
 #couple .couple-info .info .text h2 {
   margin-bottom: 10px;
