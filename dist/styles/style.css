@@ -173,7 +173,7 @@ body {
   height: 91vh;
   max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1846.JPG") no-repeat center center/cover;
-  background-position: center;
+  background-position: top;
   margin-bottom: 10px;
 }
 .hero-section .image {
@@ -201,7 +201,25 @@ body {
   color: white;
 }
 
+@media (max-width: 960px) {
+  .hero-section {
+    background-position-x: left top;
+  }
+}
+@media (max-width: 820px) {
+  .hero-section {
+    background-position-x: -120px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section {
+    background-position-x: -250px;
+  }
+}
 @media (max-width: 500px) {
+  .hero-section {
+    background-position-x: -300px;
+  }
   .hero-section .image h1 {
     font-size: 3rem;
   }

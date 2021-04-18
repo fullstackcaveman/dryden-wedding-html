@@ -14,7 +14,7 @@
 	max-width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url('../images/IMG_1846.JPG') no-repeat center center/cover;
-	background-position: center;
+	background-position: top;
 	margin-bottom: 10px;
 
 	.image {
@@ -46,8 +46,28 @@
 	}
 }
 
+@media (max-width: $breakpoint-large) {
+	.hero-section {
+		background-position-x: left top;
+	}
+}
+
+@media (max-width: $breakpoint-med-lg) {
+	.hero-section {
+		background-position-x: -120px;
+	}
+}
+
+@media (max-width: $breakpoint-small) {
+	.hero-section {
+		background-position-x: -250px;
+	}
+}
+
 @media (max-width: $breakpoint-xs) {
 	.hero-section {
+		background-position-x: -300px;
+
 		.image {
 			h1 {
 				font-size: 3rem;
@@ -439,16 +459,16 @@
 				}
 			}
 
-			.point {
-				// min-width: 20px;
-				// height: 20px;
-				// background-color: #cfe7e7;
-				// border-radius: 100%;
-				// z-index: 2;
-				// border: 3px rgb(184, 224, 224) solid;
-				// position: relative;
-				// left: 1px;
-			}
+			// .point {
+			// 	// min-width: 20px;
+			// 	// height: 20px;
+			// 	// background-color: #cfe7e7;
+			// 	// border-radius: 100%;
+			// 	// z-index: 2;
+			// 	// border: 3px rgb(184, 224, 224) solid;
+			// 	// position: relative;
+			// 	// left: 1px;
+			// }
 		}
 
 		&::before {
